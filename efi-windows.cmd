@@ -4,15 +4,6 @@ echo.
 echo EFI Unlocker 1.0.0 for VMware Workstation
 echo =========================================
 echo (c) Dave Parsons 2018
-echo.
-echo Set encoding parameters...
-chcp 850
-
-net session >NUL 2>&1
-if %errorlevel% neq 0 (
-    echo Administrator privileges required!
-    exit /b
-)
 
 echo.
 set KeyName="HKLM\SOFTWARE\Wow6432Node\VMware, Inc.\VMware Player"
