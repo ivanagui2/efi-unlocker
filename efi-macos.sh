@@ -12,7 +12,7 @@ version=`defaults read /Applications/VMware\ Fusion.app/Contents/Info.plist CFBu
 build=`defaults read /Applications/VMware\ Fusion.app/Contents/Info.plist CFBundleVersion`
 IFS='.' read -a product <<< "$version"
 
-printf "VMware product version: ${version}.${build}\n"
+printf "VMware product version: ${version}.${build}\n\n"
 #printf "Major:    ${product[0]}\n"
 #printf "Minor:    ${product[1]}\n"
 #printf "Revision: ${product[2]}\n"
