@@ -34,13 +34,13 @@ pushd %~dp0
 echo.
 echo Patching 32-bit ROM...
 xcopy /F /Y "%InstallPath%x64\EFI32.ROM" .
-.\windows\uefipatch.exe EFI32.ROM patches.txt -o EFI32-MACOS.ROM
+.\windows\UEFIPatch.exe EFI32.ROM patches.txt -o EFI32-MACOS.ROM
 del /f EFI32.ROM
 
 echo.
 echo Patching 64-bit ROM...
 xcopy /F /Y "%InstallPath%x64\EFI64.ROM" .
-.\windows\uefipatch.exe EFI64.ROM patches.txt -o EFI64-MACOS.ROM
+.\windows\UEFIPatch.exe EFI64.ROM patches.txt -o EFI64-MACOS.ROM
 del /f EFI64.ROM
 
 popd
