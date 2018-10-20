@@ -18,7 +18,7 @@ printf "VMware product version: ${version}.${build}\n\n"
 #printf "Revision: ${product[2]}\n"
 #printf "Build:    ${build}\n"
 
-# Check verion is 10+
+# Check version is 10+
 if [[ ${product[0]} -lt 10 ]]; then
    printf "VMware Fusion version 10 or greater required!\n"
    exit 1

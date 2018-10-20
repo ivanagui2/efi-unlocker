@@ -18,7 +18,7 @@ printf "VMware product version: ${version}.${build}\n\n"
 #printf "Revision: ${product[2]}\n"
 #printf "Build:    ${build}\n"
 
-# Check verion is 14+
+# Check version is 14+
 if [[ ${product[0]} -lt 14 ]]; then
    printf "VMware Workatation/Player version 14 or greater required!\n"
    exit 1
