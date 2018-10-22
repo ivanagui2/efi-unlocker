@@ -77,6 +77,6 @@ https://github.com/LongSoft/UEFITool
 
 History
 -------
-21/10/18 1.0.0 - First release
+22/10/18 1.0.0 - First release
 
 (c) 2018 Dave Parsons

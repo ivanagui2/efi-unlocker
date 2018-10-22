@@ -1,8 +1,8 @@
 @echo off
 setlocal ENABLEEXTENSIONS
 echo.
-echo EFI Unlocker 1.0.0 for VMware Workstation
-echo =========================================
+echo EFI Unlocker 1.0.0 for VMware
+echo =============================
 echo (c) Dave Parsons 2018
 
 echo.
