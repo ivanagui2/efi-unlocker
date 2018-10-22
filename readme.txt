@@ -40,11 +40,33 @@ EFI64-MACOS.ROM - 64-bit firmware
 3. Using the firmware
 ------------------------
 
-There are 2 preferred ways to use the firmware, by VM or
-Add to vmx file:
+There are 3 preferred ways to use the firmware, by VM, by user or by host system. For each option there are 2 possible
+entries dependign on whether you are installing a 32 or 64-bit version of 10.5 or 10.6 as a guest.
 
-efi32.filename = ""
-efi64.filename = ""
+32-bit:
+efi32.filename = "filename"
+
+64-bit:
+efi64.filename = "filename"
+
+You can add both and the correct one will be used based on the the guestos setting. You will need to put the full
+filename for the patched files into the double quotes.
+
+Before doing this make sure the VM is powered down and VMware is not running.
+
+Per VM:
+Open the vmx file for the guest and add the relevant lines from above.
+
+Per User:
+Add the 2 lines to the user defaults file which can be found in the following paths.
+Windows: %APPDATA%\VMware\config.ini
+Linux: ~/.vmware/config
+macOS: ~/Library/Preferences/VMware Fusion/config
+
+Per host:
+Windows: %PROGRAMDATA%\VMware\VMware Workstation\config.ini
+Linux: /etc/vmware/config
+macOS: /Library/Preferences/VMware Fusion/config
 
 4. Thanks
 ---------
